@@ -1,0 +1,460 @@
+#about {
+    padding-top: 80px;
+    .p-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        background-color: #EDEDED;
+        .__container {
+            max-width: 1122px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 8.5px;
+            padding-bottom: 8.5px;
+            background-color: #EDEDED;
+            gap: 16px;
+            a {
+                font-size: 13px;
+                font-weight: 500;
+                color: #333333;
+                text-decoration: none;
+                // font-family: "Noto Sans JP";
+            }
+        }
+
+    }
+    .p-pagettl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        background-image: url(../img/about/bg-ttl.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+        @include media-sp {
+            background-size: cover;
+        }
+        .__container {
+            max-width: 1122px;
+            padding-top: 85px;
+            padding-bottom: 104px;
+            @include media-sp {
+                padding-top: 104px;
+            }
+            .en-ttl {
+                color: #E9514E99;
+                font-size: 25px;
+                font-weight: 700;
+                @include media-sp {
+                    font-size: 23px;
+                }
+            }
+            .jp-ttl {
+                color: #333333;
+                font-weight: 700;
+                font-size: 49px;
+                @include media-sp {
+                    font-size: 48px;
+                }
+            }
+            .__absolute {
+                position: absolute;
+                max-width: 676px;
+                top: 32px;
+                right: -134px;
+                @include media-sp {
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+        }
+    }
+    .p-pageslider {
+        display: flex;
+        gap: 4px;
+
+    }
+    .p-ourvision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        background-image: url(../img/about/bg-ttl.jpg);
+        background-position: bottom;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+        @include media-sp {
+            background-size: cover;
+        }
+        .__container {
+            padding-top: 190px;
+            padding-bottom: 116px;
+            @include media-sp {
+                padding-top: 104px;
+                padding-bottom: 104px;
+            }
+            .__vision-item {
+                display: flex;
+                align-items: flex-end;
+                gap: 24px;
+                padding-top: 53px;
+                padding-bottom: 21px;
+                width: 100%;
+                border-bottom: 1px solid #263238;
+                @include media-sp {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-top: 32px;
+                    gap: 16px;
+                }
+                .__vision-item-ttl {
+                    color: #333333;
+                    font-weight: 700;
+                    font-size: 49px;
+                    min-width: 194px;
+                    @include media-sp {
+                        font-size: 33px;
+                    }
+
+                }
+                .__vision-item-ctn {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #333333;
+                    @include media-sp {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .__absolute {
+                position: absolute;
+                top: 86px;
+                left: -566px;
+                max-width: 748px;
+                @include media-sp {
+                    top: 36px;
+                    left: -76px;
+                    max-width: 248px;
+                }
+            }
+        }
+    }
+    .p-strong {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        overflow: hidden;
+        .__container {
+            padding-top: 300px;
+            padding-bottom: 366px;
+            max-width: 1122px;
+            @include media-sp {
+                padding-bottom: 80px;
+            }
+            .__strong-ctn {
+                max-width: 610px;
+                width: 100% ;
+                float: right;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 892px;
+                    height: 466px;
+                    background-image: url(../img/about/img-strong.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    top: 0;
+                    z-index: -1;
+                    transform: translate(-714px, -160px);
+                    @include media-sp {
+                        width: 100vw;
+                        height: 266px;
+                        background-size: 100% 100%;
+                        top: 0;
+                        z-index: -1;
+                        transform: translate(-16px, -220px);
+                    }
+                }
+                .__ctn-ttl {
+                    color: #FAFAFA;
+                    text-shadow: 0px 0px 8px #00000025;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                .__ctn-desc {
+                    color: #FAFAFA;
+                    text-shadow: 0px 0px 8px #00000050;
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding-top: 32px;
+                    z-index: 10;
+                    @include media-sp {
+                        color: #333333;
+                        text-shadow: unset;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        background-image: url(../img/about/bg-ceo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        @include media-sp {
+            background-size: cover;
+        }
+        .__container {
+            padding-top: 88px;
+            padding-bottom: -41px;
+            display: flex;
+            align-items: flex-start;
+            gap: 62px;
+            max-width: 1122px;
+            @include media-sp {
+                padding-top: 80px;
+                flex-direction: column;
+                padding-bottom: 80px;
+            }
+            .__message-ctn {
+                .__ctn-ttl {
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: #FAFAFA;
+                    box-shadow: 0px 0px 8px #00000025;
+                    @include media-sp {
+                        font-size: 23px;
+                    }
+
+                }
+                .__ctn-desc {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #FAFAFA;
+                    box-shadow: 0px 0px 8px #00000050;
+                    padding-top: 32px;
+                    @include media-sp {
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .__ctn-img {
+                max-width: 448px;
+                width: 100%;
+                transform: translateY(-234px);
+                @include media-sp {
+                    transform: unset;
+                }
+            }
+        }
+    }
+    .c-footer {
+        .p-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            background-image: url(../img/bg-plink.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            @include media-sp {
+                background-size: cover;
+                background-position: right;
+                background-image: url(../img/bg-plink@2x.jpg);
+            }
+            .__container {
+                padding: 64px 32px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 80px;
+                @include media-sp {
+                    padding: 64px 16px;
+                    flex-direction: column;
+                    gap: 40px;
+                }
+                .__link-item {
+                    padding: 40px;
+                    border: 1px solid #fafafa;
+                    backdrop-filter: blur(25px);
+                    background-color: #FFFFFF10;
+                    max-width: 520px;
+                    width: 100%;
+                    .__link-ttl {
+                        color: #fafafa;
+                        text-shadow: 0px 0px 8px #00000080;
+                        font-weight: 500;
+                        text-align: center;
+                        .en-ttl {
+                            font-size: 49px;
+                            text-wrap: nowrap;
+                            @include media-sp {
+                                font-size: 33px;
+
+                            }
+    
+                        }
+                        .jp-ttl {
+                            font-size: 20px;
+                            padding-top: 8px;
+                            @include media-sp {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .__link-ctn {
+                        padding: 12px 72px 12px 24px;
+                        color: #E9514E;
+                        position: relative;
+                        background-color: #FAFAFA;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        display: block;
+                        width: max-content;
+                        margin-top: 40px;
+                        margin-right: auto;
+                        margin-left: auto;
+                        transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition for background and text color
+                        cursor: pointer;
+                    
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%; // Center vertically
+                            right: 24px; // Position to the right within the padding area
+                            transform: translateY(-50%); // Center it correctly on Y-axis
+                            background-image: url('../img/ico-btnr.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            width: 21px;
+                            height: 21px; // Adjusted to match your icon size
+                            transition: transform 0.3s ease; // Smooth transform transition
+                        }
+                    
+                        &:hover {
+                            background-color: #E9514E; // Change background color on hover
+                            color: #FFFFFF; // Change text color on hover
+                    
+                            &::after {
+                                transform: translateY(-50%) translateX(10px); // Move icon to the right on hover
+                                background-image: url('../img/ico-btn.png');
+    
+                            }
+                        }
+                    }
+                    
+                }
+    
+            }
+    
+        }
+        .p-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/bg-footer.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            @include media-sp {
+                background-size: cover;
+            }
+            .__container {
+                padding: 72px 32px 0;
+                @include media-sp {
+                    padding: 32px;
+    
+                }
+                .__link-wraps {
+                    
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    margin-bottom: 48px;
+                    @include media-sp {
+                        margin-bottom: 24px;
+                        flex-direction: column;
+                        justify-content: flex-end; 
+                    }
+                    .__link-wrap {
+                        @include media-sp {
+                            width: 100%;
+                        }
+                        &:last-child {
+                            @include media-sp {
+                                margin-top: 16px;
+                                border-top: 1px solid #FAFAFA;
+                            }
+                        }
+                        a, p, li {
+                            color: #FAFAFA ;
+                            font-size: 16px;
+                            font-weight: 500;
+                            text-decoration: none;
+                            display: block;
+                            padding-bottom: 16px;
+                            @include media-sp {
+                                font-weight: 500;
+                                
+                            }
+                        }
+                        p {
+                            line-height: 2.5;
+                        }
+                        .__logo {
+                            font-size: 20px;
+                            @include media-sp {
+                                padding-top: 32px;
+                                font-weight: 500;
+                                width: 100%;
+                            }
+    
+                        }
+                    }
+                }
+                .__copyright {
+                    padding: 40px 32px;
+                    text-align: center;
+                    color: #FAFAFA;
+                    border-top: 1px solid #FAFAFA;
+                    font-size: 16px;
+                    font-weight: 500;
+                    @include media-sp {
+                        padding: 24px 0;
+                        font-size: 13px;
+                    }
+    
+                }
+            }
+        }
+    }
+}
