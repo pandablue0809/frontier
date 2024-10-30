@@ -1079,7 +1079,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 32px;
+  gap: 13px;
 }
 @media screen and (max-width: 769px) {
   #top .p-domains .__container .p-domains-main {
