@@ -77,8 +77,6 @@
 
         }
     }
-    
-    
 
     .p-intro {
         padding-right: 16px;
@@ -129,7 +127,6 @@
         .__container {
             max-width: 960px;
             padding-top: 144px;
-            padding-bottom: 104px;
             @include media-sp {
                 padding-top: 100px;
             }
@@ -348,7 +345,140 @@
         }
     }
 
-    
+    .p-download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        padding-left: 16px;
+        .__container {
+            padding-top: 85px;
+            padding-bottom: 80px;
+            .__download-ttl {
+                color: #333333;
+                font-weight: 700;
+                font-size: 39px;
+                @include media-sp {
+                    font-size: 33px;
+                }
+
+            }
+            .__download-main {
+                padding-top: 34px;
+                .__download-items {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 50px;
+                    .__download-item {
+                        .__item-ttl {
+                            color: #333333;
+                            font-weight: 700;
+                            font-size: 25px;
+                            padding-left: 16px;
+                            border-left: 4px solid #E9514E;
+                            @include media-sp {
+                                font-size: 23px;
+                            }
+                        }
+                        .__item-lists {
+                            padding-top: 35px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 30px;
+                            @include media-sp {
+                                grid-template-columns: 1fr;
+                            }
+                            
+                            
+                            .__list {
+                                max-width: 545px;
+                                background-color: #E5E6E9;
+                                padding: 11px 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 100%;
+                                .__list-ctn {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    gap: 15px;
+                                    flex-direction: column;
+                                    .__list-ttl {
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        color: #E9514E;
+                                    }
+                                    .__list-desc {
+                                        font-size: 15px;
+                                        font-weight: normal;
+                                        color: #333333;
+                                    }
+                                }
+                                .__list-downloadbtns {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 3px;
+                                    .__btn {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-direction: column;
+                                        gap: 15px;
+                                        figure {
+                                            max-width: 45px;
+
+                                        }
+                                        .__size {
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: #333333;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .__download-btn {
+                margin-top: 50px;
+                width: max-content;
+                margin-right: auto;
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                padding: 15px 20px;
+                background-color: #E9514E;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                border: 1px solid #E9514E;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: white;
+                    color: #E9514E;
+                    svg {
+                        rect {
+                            fill: #E9514E;
+                        }
+                        path {
+                            fill: #E9514E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .c-footer {
         .p-link_1 {
             display: flex;
