@@ -901,6 +901,7 @@ figure {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 89%;
+  margin-top: -5px;
 }
 @media screen and (max-width: 769px) {
   #top .p-about {

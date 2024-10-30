@@ -246,6 +246,7 @@
         background-repeat: no-repeat;
         background-position: top;
         background-size: 100% 89%;
+        margin-top: -5px;
         @include media-sp {
             background-size: 439% 79%;
         }
