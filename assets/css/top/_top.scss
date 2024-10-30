@@ -206,6 +206,10 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        background-image: url(../img/bg-badge.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         .__container {
 
             padding: 64px 32px;
@@ -215,10 +219,7 @@
             gap: 40px;
             transform: unset;
             padding: 107px 32px;
-            background-image: url(../img/bg-badge.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            
             @include media-sp {
                 padding: 80px 32px;
                 transform: translateX(14%);
