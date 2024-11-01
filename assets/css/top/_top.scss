@@ -616,6 +616,17 @@
                         height: 4px;
                         transform: translate(24px, 21px);
                     }
+                    border: 1px solid #E9514E;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #FAFAFA;
+                        color: #E9514E;
+                        &::after {
+
+                            background-image: url(../img/ico-btnr.png);
+
+                        }
+                    }
                 }
                 .__slider-controll {
                     display: flex;
@@ -719,6 +730,17 @@
                         width: 21px;
                         height: 4px;
                         transform: translate(24px, 21px);
+                    }
+                    border: 1px solid #E9514E;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #FAFAFA;
+                        color: #E9514E;
+                        &::after {
+
+                            background-image: url(../img/ico-btnr.png);
+
+                        }
                     }
                     
                 }
@@ -843,6 +865,17 @@
                         height: 4px;
                         transform: translate(24px, 21px);
                     }
+                    border: 1px solid #E9514E;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #FAFAFA;
+                        color: #E9514E;
+                        &::after {
+
+                            background-image: url(../img/ico-btnr.png);
+
+                        }
+                    }
                 }
             }
         }
@@ -955,6 +988,17 @@
                         width: 21px;
                         height: 4px;
                         transform: translate(24px, 21px);
+                    }
+                    border: 1px solid #E9514E;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #FAFAFA;
+                        color: #E9514E;
+                        &::after {
+
+                            background-image: url(../img/ico-btnr.png);
+
+                        }
                     }
                 }
             }

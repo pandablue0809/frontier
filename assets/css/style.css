@@ -199,8 +199,16 @@ figure {
   width: 100%;
 }
 .c-header .c-header__inner h1 {
-  width: 250px;
+  width: 350px;
   height: auto;
+}
+@media screen and (max-width: 769px) {
+  .c-header .c-header__inner h1 {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .c-header .c-header__inner h1 img {
   width: 100%;
@@ -1286,6 +1294,8 @@ figure {
   display: block;
   width: -moz-max-content;
   width: max-content;
+  border: 1px solid #E9514E;
+  transition: all 0.3s;
 }
 #top .p-portfolio .__container .btn-group .portfolio_more::after {
   content: "";
@@ -1298,6 +1308,13 @@ figure {
   width: 21px;
   height: 4px;
   transform: translate(24px, 21px);
+}
+#top .p-portfolio .__container .btn-group .portfolio_more:hover {
+  background-color: #FAFAFA;
+  color: #E9514E;
+}
+#top .p-portfolio .__container .btn-group .portfolio_more:hover::after {
+  background-image: url(../img/ico-btnr.png);
 }
 #top .p-portfolio .__container .btn-group .__slider-controll {
   display: flex;
@@ -1388,6 +1405,8 @@ figure {
   width: max-content;
   float: right;
   margin-top: 48px;
+  border: 1px solid #E9514E;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 769px) {
   #top .p-news .__container .p-news-main .__news-btn {
@@ -1407,6 +1426,13 @@ figure {
   width: 21px;
   height: 4px;
   transform: translate(24px, 21px);
+}
+#top .p-news .__container .p-news-main .__news-btn:hover {
+  background-color: #FAFAFA;
+  color: #E9514E;
+}
+#top .p-news .__container .p-news-main .__news-btn:hover::after {
+  background-image: url(../img/ico-btnr.png);
 }
 #top .p-recruit {
   display: flex;
@@ -1524,6 +1550,8 @@ figure {
   width: max-content;
   transform: translateY(26px);
   margin-left: 160px;
+  border: 1px solid #E9514E;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 769px) {
   #top .p-recruit .__container .p-recruit-main .__recruit-btn {
@@ -1543,6 +1571,13 @@ figure {
   width: 21px;
   height: 4px;
   transform: translate(24px, 21px);
+}
+#top .p-recruit .__container .p-recruit-main .__recruit-btn:hover {
+  background-color: #FAFAFA;
+  color: #E9514E;
+}
+#top .p-recruit .__container .p-recruit-main .__recruit-btn:hover::after {
+  background-image: url(../img/ico-btnr.png);
 }
 #top .p-irinfo {
   display: flex;
@@ -1649,6 +1684,8 @@ figure {
   width: -moz-max-content;
   width: max-content;
   transform: translateY(26px);
+  border: 1px solid #E9514E;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 769px) {
   #top .p-irinfo .__container .p-irinfo-main .__irinfo-btn {
@@ -1666,6 +1703,13 @@ figure {
   width: 21px;
   height: 4px;
   transform: translate(24px, 21px);
+}
+#top .p-irinfo .__container .p-irinfo-main .__irinfo-btn:hover {
+  background-color: #FAFAFA;
+  color: #E9514E;
+}
+#top .p-irinfo .__container .p-irinfo-main .__irinfo-btn:hover::after {
+  background-image: url(../img/ico-btnr.png);
 }
 
 #about {
@@ -7253,12 +7297,14 @@ figure {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  border: 1px solid #E9514E;
+  border: 2px solid #E9514E;
   transition: all 0.3s;
+  font-weight: 700;
 }
 #contact .p-download .__container .__download-btn:hover {
   background-color: white;
   color: #E9514E;
+  gap: 24px;
 }
 #contact .p-download .__container .__download-btn:hover svg rect {
   fill: #E9514E;

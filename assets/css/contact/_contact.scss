@@ -461,11 +461,13 @@
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
-                border: 1px solid #E9514E;
+                border: 2px solid #E9514E;
                 transition: all 0.3s;
+                font-weight: 700;
                 &:hover {
                     background-color: white;
                     color: #E9514E;
+                    gap: 24px;
                     svg {
                         rect {
                             fill: #E9514E;
